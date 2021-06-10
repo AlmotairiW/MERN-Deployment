@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const PetSchema = new mongoose.Schema({
     name: {
         type: String,
-        unique: [true, "Name must be unique"],
         required: [
             true, 
             "Pet Name is required"
